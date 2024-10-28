@@ -1,0 +1,20 @@
+<resources>
+    //Apps Name
+    <string name="app_name">Lion Hub</string>
+    <string name="todo">TODO</string>
+    <string name="country_flag_image">Country Flag Image</string>
+    <string name="item_selected">Item Selected:</string>
+
+    //Spinner Counry Name
+    <string-array name="country_name">
+        <item>Bangladesh</item>
+        <item>Bhutan</item>
+        <item>India</item>
+        <item>Maldives</item>
+        <item>Nepal</item>
+        <item>Pakistan</item>
+        <item>Sri Lanka</item>
+        <item>Afghanistan</item>
+    </string-array>
+
+</resources>
