@@ -34,7 +34,7 @@
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome"
         app:layout_constraintVertical_bias="0.993" />
@@ -92,9 +92,11 @@
         android:id="@+id/gobutton2"
         android:layout_width="79dp"
         android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
         android:text="GO>>"
+        app:layout_constraintEnd_toStartOf="@+id/gobutton3"
+        app:layout_constraintHorizontal_bias="0.014"
         app:layout_constraintStart_toEndOf="@+id/gobutton"
         app:layout_constraintTop_toBottomOf="@+id/screenpicture" />
 
@@ -118,10 +120,10 @@
         android:id="@+id/gobutton3"
         android:layout_width="75dp"
         android:layout_height="48dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
         android:text="GO>>"
-        app:layout_constraintStart_toEndOf="@+id/gobutton2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
@@ -148,7 +150,7 @@
         android:layout_height="48dp"
         android:text="GO>>"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintHorizontal_bias="0.744"
         app:layout_constraintStart_toEndOf="@+id/gobutton5"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -194,16 +196,29 @@
         app:layout_constraintTop_toBottomOf="@+id/gobutton3" />
 
     <Button
-        android:id="@+id/exitbutton"
+        android:id="@+id/logoutbutton"
         android:layout_width="104dp"
         android:layout_height="48dp"
-        android:layout_marginTop="592dp"
+        android:layout_marginEnd="4dp"
         android:text="Log Out"
         android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/logoutbutton"
+        app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

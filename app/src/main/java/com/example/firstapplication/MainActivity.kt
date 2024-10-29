@@ -39,7 +39,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var MoveBatton4 : Button
     lateinit var MoveBatton5 : Button
     lateinit var MoveBatton6 : Button
-    lateinit var mButton : Button
+    lateinit var logoutButton : Button
+    lateinit var loginButton : Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -85,14 +86,14 @@ class MainActivity : AppCompatActivity() {
         MoveBatton4 = findViewById(R.id.gobutton4)
         MoveBatton5 = findViewById(R.id.gobutton5)
         MoveBatton6 = findViewById(R.id.gobutton6)
-        mButton = findViewById(R.id.exitbutton)
+        logoutButton = findViewById(R.id.logoutbutton)
 
         // Data Set
 
         //back button
         // When button is clicked, ALertDialog
         // is created and displayed
-        mButton.setOnClickListener {
+        logoutButton.setOnClickListener {
             val mBuilder = AlertDialog.Builder(this)
                 .setTitle("Log out?")
                 .setMessage("Are you sure you want to log out?")
