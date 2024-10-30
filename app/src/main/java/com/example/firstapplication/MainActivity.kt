@@ -40,7 +40,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var MoveBatton5 : Button
     lateinit var MoveBatton6 : Button
     lateinit var logoutButton : Button
-    lateinit var loginButton : Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

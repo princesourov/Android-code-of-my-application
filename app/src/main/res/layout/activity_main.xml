@@ -72,6 +72,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="4dp"
         android:text="GO>>"
+        android:background="@drawable/btn_bg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/screencolor" />
 
@@ -95,6 +96,7 @@
         android:layout_marginStart="52dp"
         android:layout_marginTop="4dp"
         android:text="GO>>"
+        android:background="@drawable/btn_bg"
         app:layout_constraintEnd_toStartOf="@+id/gobutton3"
         app:layout_constraintHorizontal_bias="0.014"
         app:layout_constraintStart_toEndOf="@+id/gobutton"
@@ -123,6 +125,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="24dp"
         android:text="GO>>"
+        android:background="@drawable/btn_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -132,6 +135,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="36dp"
         android:text="GO>>"
+        android:background="@drawable/btn_bg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinText" />
 
@@ -141,6 +145,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="56dp"
         android:text="GO>>"
+        android:background="@drawable/btn_bg"
         app:layout_constraintStart_toEndOf="@+id/gobutton4"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -149,6 +154,7 @@
         android:layout_width="75dp"
         android:layout_height="48dp"
         android:text="GO>>"
+        android:background="@drawable/btn_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.744"
         app:layout_constraintStart_toEndOf="@+id/gobutton5"
@@ -199,23 +205,11 @@
         android:id="@+id/logoutbutton"
         android:layout_width="104dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="4dp"
-        android:text="Log Out"
+        android:text="Logout"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.998" />
-
-    <Button
-        android:id="@+id/loginbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Log in"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/logoutbutton"
-        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintHorizontal_bias="0.977"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.998" />

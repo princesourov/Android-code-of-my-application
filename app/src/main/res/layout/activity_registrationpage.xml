@@ -6,26 +6,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/loginpage"
-    tools:context=".Loginpage">
-
+    tools:context=".registrationpage">
 
     <TextView
         android:id="@+id/logintext"
-        android:layout_width="160dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="322dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="LogIn"
+        android:text="Register For New User"
         android:textColor="@color/white"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/LoginUserName"
+        android:id="@+id/registerUserName"
         android:layout_width="356dp"
         android:layout_height="54dp"
         android:layout_marginTop="36dp"
@@ -33,7 +32,7 @@
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Username"
+        android:hint="Create username"
         android:inputType="text"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -47,16 +46,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logintext" />
 
+
     <EditText
-        android:id="@+id/LoginPassword"
+        android:id="@+id/registerPassword"
         android:layout_width="356dp"
         android:layout_height="56dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_security_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Passeord"
+        android:hint="Create a new passeord"
+        android:text=""
+        android:textColor="@color/white"
         android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -66,36 +68,82 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LoginUserName" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="356dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:text=""
+        android:textColor="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerUserName" />
+
+    <EditText
+        android:id="@+id/reregiPassword"
+        android:layout_width="356dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Re-type your passeord"
+        android:text=""
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
 
     <Button
-        android:id="@+id/loginbutton1"
+        android:id="@+id/registerbutton"
         android:layout_width="131dp"
         android:layout_height="49dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/btn_bg"
-        android:text="Log in"
-        android:textSize="20sp"
+        android:text="Register"
         android:textAllCaps="false"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LoginPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/reregiPassword" />
 
     <TextView
-        android:id="@+id/Newuser"
+        android:id="@+id/existinguser"
         android:layout_width="176dp"
         android:layout_height="41dp"
         android:gravity="center"
-        android:text="Register For New User"
+        android:text="Already have an account"
         android:textColor="@color/white"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginbutton1"
-        app:layout_constraintVertical_bias="0.148" />
+        app:layout_constraintTop_toBottomOf="@+id/registerbutton"
+        app:layout_constraintVertical_bias="0.164" />
 
     <ImageView
         android:id="@+id/imageView"
