@@ -1,5 +1,6 @@
 package com.example.firstapplication
 
+import DatabaseHelper
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -54,13 +55,14 @@ class Loginpage : AppCompatActivity() {
         lodinbutton.setOnClickListener(View.OnClickListener {
             val username1 = username.getText().toString()
             val password1 = password.getText().toString()
+            val db = DatabaseHelper(applicationContext, "LoinHub", null, 1)
             if(username1.length ==0||password1.length ==0){
                 val toast = Toast.makeText(applicationContext, "Please fill all details", Toast.LENGTH_SHORT)
                 toast.show()
             }
 
             else{
-                if(username1 == "iqbal" && password1 == "1234"){
+                if(db.login(username1,password1)){
                     val toast = Toast.makeText(applicationContext, "Login success", Toast.LENGTH_SHORT)
                     toast.show()
                     val Intent = Intent(this,MainActivity::class.java)
