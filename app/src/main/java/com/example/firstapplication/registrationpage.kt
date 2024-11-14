@@ -55,7 +55,7 @@ class registrationpage : AppCompatActivity() {
                     }
                     else{
                         if(isValidPassword(password1)){
-                            db.register(username.toString(), email.toString(), password.toString())
+                            db.register(username1,email1,password1)
                     val toast = Toast.makeText(applicationContext, "Successful registration", Toast.LENGTH_SHORT)
                     toast.show()
                     val Intent = Intent(this,Loginpage::class.java)

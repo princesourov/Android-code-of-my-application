@@ -66,6 +66,7 @@ class Loginpage : AppCompatActivity() {
                     val toast = Toast.makeText(applicationContext, "Login success", Toast.LENGTH_SHORT)
                     toast.show()
                     val Intent = Intent(this,MainActivity::class.java)
+                    Intent.putExtra("name",username1)
                     startActivity(Intent)
                 }
                 else{

@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var welcomeE : TextView
     lateinit var welcomeF : TextView
     lateinit var welcomeG : TextView
+    lateinit var usernameshow : TextView
 
     //Buttom
     lateinit var MoveBatton : Button
@@ -77,6 +78,7 @@ class MainActivity : AppCompatActivity() {
         welcomeE = findViewById(R.id.textView6)
         welcomeF = findViewById(R.id.textView7)
         welcomeG = findViewById(R.id.mywork)
+        usernameshow = findViewById(R.id.usernameshow)
 
         //Buttom
         MoveBatton = findViewById(R.id.gobutton)
@@ -88,6 +90,10 @@ class MainActivity : AppCompatActivity() {
         logoutButton = findViewById(R.id.logoutbutton)
 
         // Data Set
+        //usernameshow data set
+        var usernameshowv :String = intent.getStringExtra("name").toString()
+        usernameshow.text = "$usernameshowv"
+
 
         //back button
         // When button is clicked, ALertDialog
@@ -167,7 +173,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent)
         }
         MoveBatton6.setOnClickListener {
-            val Intent = Intent(this,spnrwtpc::class.java)
+            val Intent = Intent(this,RecyclerVieww::class.java)
             startActivity(Intent)
         }
 
